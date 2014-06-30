@@ -409,6 +409,27 @@ hi! link diffAdded Special
 "		diffComment
 
 "}}}
+" vim-indent-guides:"{{{
+" ----------------------------------------------------------------------------
+if !exists("g:indent_guides_auto_colors")
+  let g:indent_guides_auto_colors = 0
+endif
+exe "hi! IndentGuidesOdd"   .s:fg_none  .s:bg_none          .s:fmt_none
+exe "hi! IndentGuidesEven"  .s:fg_none  .s:bg_darkcolumn    .s:fmt_none
+
+"}}}
+" vim-signify:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! SignifySignAdd"    .s:fg_addbg     .s:bg_darkcolumn  .s:fmt_none
+exe "hi! SignifySignDelete" .s:fg_red       .s:bg_darkcolumn  .s:fmt_none
+exe "hi! SignifySignChange" .s:fg_changebg  .s:bg_darkcolumn  .s:fmt_none
+
+"}}}
+" CtrlP:"{{{
+" ----------------------------------------------------------------------------
+hi! link CtrlPMatch Search
+
+"}}}
 " Legal:"{{{
 " ----------------------------------------------------------------------------
 " Copyright (c) 2011 Ethan Schoonover
