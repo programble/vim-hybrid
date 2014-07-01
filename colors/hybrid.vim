@@ -409,6 +409,11 @@ hi! link diffAdded Special
 "		diffComment
 
 "}}}
+" HTML Highlighting:"{{{
+" ----------------------------------------------------------------------------
+hi! link htmlTag Identifier
+
+"}}}
 " vim-indent-guides:"{{{
 " ----------------------------------------------------------------------------
 if !exists("g:indent_guides_auto_colors")
